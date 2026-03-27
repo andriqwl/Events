@@ -23,7 +23,7 @@ specificInput.addEventListener("blur", (event) => {
   const requiredLength = Number(specificInput.dataset.length);
   const currentLength = event.target.value.length;
 
-  if (requiredLength === currentLength) {
+  if (requiredLength >= currentLength) {
     specificInput.classList.remove("invalid");
     specificInput.classList.add("valid");
   } else {
